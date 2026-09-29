@@ -1,9 +1,9 @@
 cask "illithid" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.2.18"
-  sha256 arm:   "6fe3eefffb51edee2369adea762ad929d4d4611901fe5df17a672c141ef0e5ac",
-         intel: "00968e895306c3b012d0a9a4ca8dd4049f879b577db253aafedf8c24f4fbedde"
+  version "0.2.19"
+  sha256 arm:   "9fee203b5fd4d91899467ab3fbd2d6111a132f066a161e1cfa4a05bfba9d2070",
+         intel: "4108b15e19750c018211b8fc92cbab1a63165c473220db2788b47144512ca3f6"
 
   url "https://github.com/doominkim/illithid/releases/download/v#{version}/illithid-#{arch}.dmg"
   name "Illithid"
