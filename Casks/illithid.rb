@@ -1,9 +1,9 @@
 cask "illithid" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.2.26"
-  sha256 arm:   "9c181d9b833b1a42b9b46caae68550bae00196a64e48c3c16a099c6c9fd480d0",
-         intel: "b87f4e14859cb7e816384f6e4c2da1b925a90bc9ad5a47552ae98fa293634601"
+  version "0.2.27"
+  sha256 arm:   "42b0137b9f224415c5832c43c3f94d91fbe58a22b4f377a7546741f92f3e7484",
+         intel: "43d40f3525c94399e8e0b91272836f6697e5759e70b6e0db0185b2b91441d06d"
 
   url "https://github.com/doominkim/illithid/releases/download/v#{version}/illithid-#{arch}.dmg"
   name "Illithid"
@@ -18,6 +18,9 @@ cask "illithid" do
   depends_on macos: :monterey
 
   app "Illithid.app"
+
+  # Quit the running app (it stays in the menu bar) before an upgrade replaces it
+  uninstall quit: "com.illithid.app"
 
   zap trash: [
     "~/.config/illithid",
