@@ -14,7 +14,7 @@ cask "beholder" do
 
   # Local transcription runs on MLX, so Apple Silicon only
   depends_on arch: :arm64
-  depends_on macos: :monterey
+  depends_on macos: :ventura
   depends_on formula: "ffmpeg"
 
   app "Beholder.app"
