@@ -1,6 +1,6 @@
 cask "beholder" do
-  version "0.2.0"
-  sha256 "622088e5e512dfffd3f7d6ee10685fb2f35ef289c3d386add335a6aa67fe30b4"
+  version "0.3.0"
+  sha256 "248868c6bff799dd4b2a0ec7e028496bd5f9e708dd9c1e0c67aab456b1653782"
 
   url "https://github.com/doominkim/beholder-releases/releases/download/v#{version}/beholder-arm64.dmg"
   name "Beholder"
