@@ -1,6 +1,6 @@
 cask "beholder" do
-  version "0.1.0"
-  sha256 "3805ce8871822508b47a5982c46efe70efaeaf0e27dee6c5e0567e9a16d57514"
+  version "0.2.0"
+  sha256 "622088e5e512dfffd3f7d6ee10685fb2f35ef289c3d386add335a6aa67fe30b4"
 
   url "https://github.com/doominkim/beholder-releases/releases/download/v#{version}/beholder-arm64.dmg"
   name "Beholder"
@@ -15,7 +15,6 @@ cask "beholder" do
   # Local transcription runs on MLX, so Apple Silicon only
   depends_on arch: :arm64
   depends_on macos: :ventura
-  depends_on formula: "ffmpeg"
 
   app "Beholder.app"
 
